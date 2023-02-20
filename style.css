@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fa-menu, .fa-menu ul{
+    position: fixed;
+    top: 0;
+    background: #fff;
+    height: 1em;
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    padding: 1.5em;
+    align-items: center;
+    justify-content:space-around;
+    text-transform: uppercase;
+    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.25);
+    z-index: 5;
+}
+.fa-menu a{
+    text-decoration: none;
+    color: black;
+}
+.fa-menu a:hover{
+    transition: all linear .3s;
+    color: #B08EAD;
+    cursor: pointer;
+}
+.container {
+    height: calc(100vh - 68px);
+    margin-top: 68px;
+    position: relative;
+    display: flex;
+    z-index: 0;
+    align-items: center;
+}
+.textreview, .imgreview{
+    flex: 1;
+}
+.textreview{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.textreview div{
+    margin: 0 auto;
+    width: 70%;
+}
+.textreview h3 {
+    color: #B08EAD;
+    margin-bottom: 3px;
+}
+.textreview button{
+    transition: all linear .3s;
+    margin-top: 1rem;
+    color: #B08EAD;
+    background: none;
+    border: 2px solid #B08EAD;
+    border-radius: 4px;
+    margin-left: 40px;
+    font-size: 17px;
+    padding: 1rem 1rem;
+}
+.imgreview {
+    display: flex;
+    justify-content: center;
+}
+.imgreview > img{
+    transition: all linear .2s;
+    cursor: pointer;
+    box-shadow: 10px 10px 2px #B08EAD;
+    width: 50%;
+    transform: rotateZ(20deg);
+    border-radius: 40px;
+}
+.imgreview img:hover{
+    scale: 1.15;
+}
+.textreview button:hover {
+    cursor: pointer;
+    color: #fff;
+    background: #B08EAD;
+}
+
+.product{
+    background: #fff5fe;
+    display: flex;
+    flex-direction: column;
+}
+.product h3{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 30px;
+}
+.product ul{
+    width: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.product li {
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 9px;
+    transition: all .5s;
+    display: block;
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #b08ead40;
+}
+.product li:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 12px #000000;
+}
+.product .img-product{
+    width: 100%;
+}
+.product .book-name{
+    padding-left: 5px;
+}
+.product .price{
+    background: #B08EAD;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+}
+.product li:hover~.price {
+    color: #fff;
+}
